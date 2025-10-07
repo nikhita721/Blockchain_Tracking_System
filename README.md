@@ -1,8 +1,8 @@
-# 🔗 Blockchain Tracking System
+# Blockchain Tracking System
 
 A real-time Bitcoin blockchain monitoring system that connects to [Blockchain.com's WebSocket API](https://www.blockchain.com/explorer/api/api_websocket) to track live transactions, blocks, and network activity.
 
-## ✨ Features
+## Features
 
 - **Real-time Transaction Monitoring**: Track all new Bitcoin transactions as they happen
 - **Block Tracking**: Monitor new blocks being mined on the Bitcoin network
@@ -13,7 +13,7 @@ A real-time Bitcoin blockchain monitoring system that connects to [Blockchain.co
 - **Network Statistics**: Comprehensive stats about Bitcoin network activity
 - **Auto-reconnection**: Robust WebSocket client with automatic reconnection
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -39,7 +39,7 @@ A real-time Bitcoin blockchain monitoring system that connects to [Blockchain.co
    ```
    Then visit `http://localhost:8050` in your web browser.
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 The web dashboard provides real-time visualization of:
 
@@ -51,7 +51,7 @@ The web dashboard provides real-time visualization of:
 - **Fee Distribution**: Histogram of transaction fees
 - **Recent Transactions Table**: Latest transactions with sortable columns
 
-## ⚙️ Configuration
+## Configuration
 
 You can customize the system by modifying `config.py` or setting environment variables:
 
@@ -84,7 +84,7 @@ To monitor specific Bitcoin addresses, you can:
 - **Port**: `8050`
 - **Debug mode**: Enabled by default
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Blockchain_Tracking_System/
@@ -99,7 +99,7 @@ Blockchain_Tracking_System/
 └── run.py                 # Convenience script to run both tracker and dashboard
 ```
 
-## 🔧 API Integration
+## API Integration
 
 This system uses the [Blockchain.com WebSocket API](https://www.blockchain.com/explorer/api/api_websocket) with the following subscriptions:
 
@@ -107,7 +107,7 @@ This system uses the [Blockchain.com WebSocket API](https://www.blockchain.com/e
 - **New Blocks**: `{"op": "blocks_sub"}`
 - **Address Monitoring**: `{"op": "addr_sub", "addr": "bitcoin_address"}`
 
-## 📈 Data Models
+## Data Models
 
 ### Transaction Data
 - Hash, index, timestamp, size, version
@@ -126,7 +126,7 @@ This system uses the [Blockchain.com WebSocket API](https://www.blockchain.com/e
 - Total received/sent
 - Last activity timestamp
 
-## 🛠️ Usage Examples
+## Usage Examples
 
 ### Basic Usage
 ```bash
@@ -150,7 +150,7 @@ python main.py
 tail -f blockchain_tracker.log
 ```
 
-## 📊 Database Schema
+## Database Schema
 
 The system creates the following SQLite tables:
 
@@ -161,14 +161,14 @@ The system creates the following SQLite tables:
 - `address_subscriptions`: Monitored address data
 - `statistics`: System statistics
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 - **Local Storage**: All data is stored locally in SQLite database
 - **No API Keys**: Uses public Blockchain.com WebSocket API
 - **Read-Only**: System only reads blockchain data, never writes to the network
 - **Privacy**: No personal data is collected or transmitted
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Connection Issues
 - Check internet connection
@@ -184,7 +184,7 @@ The system creates the following SQLite tables:
 - Adjust `MAX_STORED_TRANSACTIONS` and `MAX_STORED_BLOCKS` in `config.py`
 - Database automatically cleans up old records
 
-## 📝 Logging
+## Logging
 
 The system logs to both console and `blockchain_tracker.log`:
 
@@ -193,7 +193,7 @@ The system logs to both console and `blockchain_tracker.log`:
 - **ERROR**: Connection and processing errors
 - **DEBUG**: Detailed message processing (when debug enabled)
 
-## 🤝 Contributing
+## Contributing
 
 This is a complete, self-contained blockchain tracking system. You can extend it by:
 
@@ -203,11 +203,11 @@ This is a complete, self-contained blockchain tracking system. You can extend it
 - Adding export functionality
 - Integrating with other APIs
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🌟 Features in Detail
+## Features in Detail
 
 ### Real-time Monitoring
 - Connects to live Bitcoin network data
@@ -236,6 +236,6 @@ This project is open source and available under the MIT License.
 
 ---
 
-**🎯 Ready to track the Bitcoin blockchain in real-time!**
+**Ready to track the Bitcoin blockchain in real-time!**
 
 Start with `python main.py` and open `http://localhost:8050` to see live Bitcoin transactions flowing through the network.
