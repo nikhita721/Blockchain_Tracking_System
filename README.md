@@ -1,6 +1,20 @@
 # Blockchain Tracking System
 
-A real-time Bitcoin blockchain monitoring system that connects to [Blockchain.com's WebSocket API](https://www.blockchain.com/explorer/api/api_websocket) to track live transactions, blocks, and network activity.
+A comprehensive real-time Bitcoin blockchain monitoring and analytics platform that provides live transaction tracking, network analysis, and intelligent insights through advanced WebSocket integration and modern data visualization.
+
+## Overview
+
+This enterprise-grade blockchain tracking system connects to [Blockchain.com's WebSocket API](https://www.blockchain.com/explorer/api/api_websocket) to deliver real-time Bitcoin network monitoring, transaction analysis, and comprehensive blockchain intelligence. Built with Python, SQLite, and modern web technologies, it provides both programmatic access and intuitive dashboard interfaces for blockchain data analysis.
+
+## Key Capabilities
+
+- **Real-time Blockchain Monitoring**: Live tracking of Bitcoin transactions, blocks, and network activity
+- **Advanced Analytics**: Comprehensive network statistics, transaction patterns, and blockchain insights
+- **High-Value Transaction Detection**: Automated identification and tracking of significant transactions
+- **Address Monitoring**: Targeted tracking of specific Bitcoin addresses and wallet activities
+- **Data Persistence**: Robust SQLite database storage with optimized query performance
+- **Interactive Dashboards**: Modern web-based visualization with real-time updates
+- **API Integration**: RESTful endpoints for programmatic access and third-party integrations
 
 ## Features
 
